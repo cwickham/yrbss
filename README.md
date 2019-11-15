@@ -1,6 +1,6 @@
 # yrbss
 
-This package provides access to results from the bi-annual [Youth Risk Behaviour Surveillance System](http://www.cdc.gov/healthyyouth/data/yrbs/index.htm) from 1991 to 2013.
+This package provides access to national results from the bi-annual [Youth Risk Behaviour Surveillance System](https://www.cdc.gov/healthyyouth/data/yrbs/data.htm) from 1991 to 2017.
 
 ## Installation
 

@@ -1,15 +1,16 @@
 Package: yrbss
 Title: Youth Risk Behaviour Surveillance System Data
-Version: 0.0.0.9000
+Version: 0.0.0.9001
 Authors@R: c(
     person("Hadley", "Wickham", , "hadley@rstudio.com", role = c("aut", "cre")),
+    person("Charlotte", "Wickham", , "cwickham@gmail.com", role = c("ctb")),
     person("RStudio", role = "cph")
   )
 Description: Data from the youth risk behaviour surveillance system (YRBSS)
-    for 1991-2013.
+    for 1991-2017.
 License: CC0
 Depends: R (>= 2.10)
 LazyData: true
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1
 URL: https://github.com/hadley/yrbss
 BugReports: https://github.com/hadley/yrbss/issues

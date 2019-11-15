@@ -17,5 +17,5 @@
 #' the bundled \code{system.file("documentation.pdf", package = "yrbss")}
 #' for details.
 #'
-#' @format A data frame with 173,274 observations and 231 variables.
+#' @format A data frame with 203,663 observations and 269 variables.
 "survey"

@@ -3,19 +3,73 @@ library(dplyr, warn.conflicts = FALSE)
 library(purrr, warn.conflicts = FALSE)
 library(stringr)
 
-if (!file.exists("data-raw/sadc_2013_national.dat")) {
-  temp <- tempfile(fileext = ".zip")
+if (!file.exists("data-raw/sadc_2017_national.dat")) {
   download.file(
-    "ftp://ftp.cdc.gov/pub/data/yrbs/SADC_2013/sadc_2013_national_ASCII.zip",
-    temp
+    "ftp://ftp.cdc.gov/pub/data/yrbs/sadc_2017/sadc_2017_national.dat",
+    "data-raw/sadc_2017_national.dat"
   )
-  unzip(temp, exdir = "data-raw", junkpaths = TRUE)
 }
 
+# Parse SPSS program to get variables, levels and labels ------------------
+
+# Split into appropriate chunks
+spss_lines <- read_lines("data-raw/2017_sadc_spss_input_program.sps")
+line_delims <- c("DATA LIST FILE", "VARIABLE LABELS", "VALUE LABELS",
+  "MISSING VALUES")
+parts <- map(line_delims, ~ str_detect(spss_lines, .)) %>%
+  reduce(`|`) %>%
+  cumsum()
+spss_parts <- split(spss_lines, parts) %>%
+  set_names(c("preamble", "variables", "labels", "levels", "postamble"))
+
+# Parse variables and positions
+variables <-
+  spss_parts[["variables"]] %>%
+  str_match_all("(\\w+) (\\d+)\\-(\\d+)") %>%
+  map_dfr(as_tibble, .name_repair = "unique") %>%
+  set_names(c("string", "variable", "start", "end")) %>%
+  mutate(variable = str_to_lower(variable))
+
+# Parse labels
+nrows <- length(spss_parts[["labels"]])
+labels <- spss_parts[["labels"]][c(-1, -nrows)] %>%
+  str_replace_all("\"", "") %>%
+  str_split_fixed(" ", n = 2) %>%
+  as_tibble(.name_repair = "unique") %>%
+  set_names(c("variable", "label")) %>%
+  mutate(variable = str_to_lower(variable)) %>%
+  write_csv("data-raw/labels.csv")
+
+variables <- variables %>%
+  left_join(labels) %>%
+  write_csv("data-raw/variables.csv")
+
+# write out levels as-is --- parsed later
+spss_parts[["levels"]] %>%
+  write_lines("data-raw/levels.txt")
+
+
+# Read in raw data --------------------------------------------------------
+
 vars <- read_csv("data-raw/variables.csv")
+types <- read_csv("data-raw/types.csv")
+
+vars <- vars %>%
+  left_join(types)
+
+# useful for debugging data problems
+raw_char <- read_fwf(
+  "data-raw/sadc_2017_national.dat",
+  col_positions = fwf_positions(vars$start, vars$end, vars$variable),
+  col_types = paste(rep("c", nrow(vars)), collapse = "")
+)
+
+# actual data to work with
 raw <- read_fwf(
-  "data-raw/sadc_2013_national.dat",
-  col_positions = fwf_positions(vars$start, vars$end, vars$variable)
+  "data-raw/sadc_2017_national.dat",
+  col_positions = fwf_positions(vars$start, vars$end, vars$variable),
+  col_types = str_sub(vars$type, 1, 1) %>% str_c(collapse = ""),
+  na = "."
 )
 
 # Factor levels -----------------------------------------------------------
@@ -48,22 +102,17 @@ for (var in names(factorise)) {
   survey[[var]] <- factorise[[var]](survey[[var]])
 }
 
-
 # Replace numeric 0's with NA ---------------------------------------------
-
-num_vars <- survey %>% map_lgl(is_numeric)
 replace_0 <- function(x) {
   x[x == 0] <- NA
   x
 }
-
-survey[num_vars] <- survey[num_vars] %>% map(replace_0)
-
+survey <- survey %>%
+  mutate_if(is.numeric, replace_0)
 
 # Convert dichotomous to logical ------------------------------------------
 
 dichot <- survey %>% names() %>% str_detect("^qn")
-
 survey[dichot] <- survey[dichot] %>% map(~ .x == 1)
 
 # Variable labels ---------------------------------------------------------
@@ -87,5 +136,4 @@ survey %>% map_lgl(all_missing) %>% which %>% names
 survey <- survey %>% discard(all_missing)
 
 # Save --------------------------------------------------------------------
-
-devtools::use_data(survey, overwrite = TRUE)
+usethis::use_data(survey, overwrite = TRUE)

@@ -1,277 +1,315 @@
-variable,start,end,label
-sitecode,1,5,Site code
-sitename,6,55,Site name
-sitetype,56,105,Site type
-sitetypenum,106,113,
-year,114,121,4-digit Year of survey
-survyear,122,124,
-weight,125,134,Analysis weight
-stratum,135,142,Analysis stratum
-PSU,143,150,NA
-record,151,158,Record ID
-age,159,161,
-sex,162,164,
-grade,165,167,
-race4,168,170,4-level race variable
-race7,171,173,7-level race variable
-stheight,174,181,Height in meters
-stweight,182,189,Weight in kilograms
-bmi,190,197,Body Mass Index
-bmipct,198,205,BMI percentile
-qnobese,206,208,Obese
-qnowt,209,211,Overweight
-qsexid,212,212,Original sexual identity variable
-qsexpart,213,213,Original sex of sex contact(s)
-sexid,214,221,Sexual identity
-sexid2,222,229,Collapsed sexual identity
-sexpart,230,237,Sex of sex contact(s)
-sexpart2,238,245,Collapsed sex of sex contact(s)
-q8,246,246,How often wear bicycle helmet
-q9,247,247,How often wore a seat belt
-q10,248,248,How often ride w/drinking driver 30 days
-q11,249,249,How often drive while drinking 30 days
-q12,250,250,Texted while driving
-q13,251,251,Carried weapon 30 days
-q14,252,252,Carried gun 30 days
-q15,253,253,Carried weapon at school 30 days
-q16,254,254,How many days feel unsafe at school 30 days
-q17,255,255,How  many times threatened at school 12 mos
-q18,256,256,How many times in fight 12 mos
-q19,257,257,How many times injured in fight 12 mos
-q20,258,258,How many times in fight at school  12 mos
-q21,259,259,Have you been forced to have sex
-q22,260,260,Times physically hurt by dates 12 mos
-q23,261,261,Forced to do sexual things by dates
-q24,262,262,Have you ever been bullied at school
-q25,263,263,Have you ever been electronically bullied
-q26,264,264,Ever feel sad or hopeless 12 mos
-q27,265,265,Ever considered suicide 12 mos
-q28,266,266,Ever make suicide plan 12 mos
-q29,267,267,Ever attempt suicide 12 mos
-q30,268,268,Ever injured from suicide attempt 12 mos
-q31,269,269,Ever smoked
-q32,270,270,How old when first smoked
-q33,271,271,How many days smoked 30 days
-q34,272,272,How many cigarettes/day 30 days
-q35,273,273,How did you get cigarettes past 30 days
-q36,274,274,How many days smoke at school 30 days
-q37,275,275,Have you ever smoked daily
-q38,276,276,Tried to quit smoking past 12 months
-q39,277,277,How many days use snuff past 30 days
-q40,278,278,How many days smoke cigars 30 days
-q41,279,279,How many days drink alcohol
-q42,280,280,How old when first drank alcohol
-q43,281,281,How many days drink alcohol 30 days
-q44,282,282,How many days have 5+ drinks 30 days
-q45,283,283,Max # drinks in a row past 30 days
-q46,284,284,How did you get alcohol past 30 days
-q47,285,285,How many times smoke marijuana
-q48,286,286,How old when first tried marijuana
-q49,287,287,How many times use marijuana 30 days
-q50,288,288,How many times use cocaine
-q51,289,289,How many times sniffed glue
-q52,290,290,How many times used heroin
-q53,291,291,How many times used methamphetamines
-q54,292,292,Ecstacy one or more time
-q55,293,293,How many times used steroids
-q56,294,294,How many times prescription drug
-q57,295,295,How many times injected drugs
-q58,296,296,Offered drugs at school 12 mos
-q59,297,297,Ever had sex
-q60,298,298,How old at first sex
-q61,299,299,How many sex partners
-q62,300,300,How many sex partners 3 mos
-q63,301,301,Did you use alcohol/drugs at last sex
-q64,302,302,Did you use condom at last sex
-q65,303,303,What birth control at last sex (recoded to bridge years)
-q66,304,304,How do you describe your weight
-q67,305,305,What are you trying to do about weight
-q68,306,306,Did you fast to lose weight 30 days
-q69,307,307,Did you take pill to lose weight 30 days
-q70,308,308,Did you vomit to lose weight 30 days
-q71,309,309,How many times fruit juice 7 days
-q72,310,310,How many times fruit 7 days
-q73,311,311,How many time green salad 7 days
-q74,312,312,How many times potatoes 7 days
-q75,313,313,How many times carrots 7 days
-q76,314,314,How many times other vegetables 7 days
-q77,315,315,How many times drink soda past 7 days
-q78,316,316,How many glass of milk 7 days
-q79,317,317,How often ate breakfast past 7 days
-q80,318,318,Days active 60 min plus past 7 days
-q81,319,319,How many hours watch TV
-q82,320,320,How many hours/day play video games
-q83,321,321,How many days go to PE class
-q84,322,322,On how many sports team 12 mos
-q85,323,323,Ever taught about AIDS/HIV at school
-q86,324,324,Ever been told you have asthma
-qn8,325,327,Never/rarely wore bicycle helmet
-qn9,328,330,Never/rarely wore seat belt
-qn10,331,333,Rode 1+ times with drinking driver
-qn11,334,336,Drove 1+ times when drinking
-qn12,337,339,Texted while driving 1+ times past 30 days
-qn13,340,342,Carried weapon 1+ times past 30 days
-qn14,343,345,Carried gun 1+ past 30 days
-qn15,346,348,Carried weapon school 1+ past 30 days
-qn16,349,351,Missed school b/c unsafe 1+ 30 days
-qn17,352,354,Threatened at school 1+ times 12 mos
-qn18,355,357,Fought 1+ times 12 mos
-qn19,358,360,Injured/treated 1+ times 12 mos
-qn20,361,363,Fought school 1+ times 12 mos
-qn21,364,366,Forced to have sex
-qn22,367,369,Hurt by date 1+ times past 12 mos
-qn23,370,372,Forced to do sexual by date past 12 mos
-qn24,373,375,Bullied past 12 months
-qn25,376,378,Electronically bullied 12 mos
-qn26,379,381,Sad 2 wks past 12 mos
-qn27,382,384,Considered suicide 12 mos
-qn28,385,387,Made suicide plan 12 mos
-qn29,388,390,Attempted suicide 1+ times 12 mos
-qn30,391,393,Suicide attempt w/injury 12 mos
-qn31,394,396,Ever tried cigarettes
-qn32,397,399,Smoked cigarette before 13
-qn33,400,402,Smoked 1+ past 30 days
-qn34,403,405,10+ cigarettes/day past 30 days
-qn35,406,408,Got cigarettes in store 30 days
-qn36,409,411,Smoked at school 1+ past 30 days
-qn37,412,414,Smoked daily for 30 days
-qn38,415,417,"Among smokers, tried to quit smoking"
-qn39,418,420,Used snuff/dip 1+ past 30 days
-qn40,421,423,Smoked cigars 1+ past 30 days
-qn41,424,426,Had 1 drink on 1+ days in life
-qn42,427,429,Had first drink before 13
-qn43,430,432,Had 1+ drinks past 30 days
-qn44,433,435,Five+ drinks 1+ past 30 days
-qn45,436,438,10+ drinks in a row past 30 days
-qn46,439,441,Someone gave them alcohol past 30 days
-qn47,442,444,Tried marijuana 1+ times in life
-qn48,445,447,Tried marijuana before 13
-qn49,448,450,Used marijuana 1+ times past 30 days
-qn50,451,453,Used cocaine 1+ times in life
-qn51,454,456,Sniffed glue 1+ times in life
-qn52,457,459,Used heroin 1+ times in life
-qn53,460,462,Used meth 1+ times in life
-qn54,463,465,Used ecstasy 1+ times in life
-qn55,466,468,Took steroids 1+ times in life
-qn56,469,471,Taken prescription drug wo prescription
-qn57,472,474,Injected drugs 1+ times in life
-qn58,475,477,Offered/sold drugs at school 12 mos
-qn59,478,480,Had sex ever
-qn60,481,483,Had sex before 13
-qn61,484,486,Had sex with 4+ people in life
-qn62,487,489,Had sex with 1+ people 3 mos
-qn63,490,492,"Of current sex, used alcohol last time"
-qn64,493,495,"Of current sex, used condom last time"
-qn65,496,498,"Of current sex, used birth ctl last sx"
-qn66,499,501,Slightly/very overweight
-qn67,502,504,Trying to lose weight
-qn68,505,507,Fasted to lose weight past 30 days
-qn69,508,510,Took pills to lose weight past 30 days
-qn70,511,513,Vomited to lose weight past 30 days
-qn71,514,516,Drank fruit juice past 7 days
-qn72,517,519,Ate fruit past 7 days
-qn73,520,522,Ate green salad past 7 days
-qn74,523,525,Ate potatoes past 7 days
-qn75,526,528,Ate carrots past 7 days
-qn76,529,531,Ate vegetables past 7 days
-qn77,532,534,Drink soda 1+ times/day past 7 days
-qn78,535,537,Drank 3+ glasses milk/day past 7 days
-qn79,538,540,Ate breakfast on all of the past 7 days
-qn80,541,543,Active 60 min on 5+ past 7 days
-qn81,544,546,Watched 3+ hours of TV average day
-qn82,547,549,Played video games 3+ hours/day
-qn83,550,552,Go to PE class 1+ days average week
-qn84,553,555,Played on 1+ sports teams 12 mos
-qn85,556,558,Taught about AIDS in school
-qn86,559,561,Told by doctor/nurse they had asthma
-qnfrcig,562,564,Smoked on 20 past 30 days
-qndaycig,565,567,Percentage of students who smoked daily during the past 30 days
-qnanytob,568,570,Used any tobacco past 30 days
-qnothh,571,573,"Of current sex, used Depo last sex"
-qnothhpl,574,576,"Of current sex, birth ctrl/Depo last sex"
-qndualbc,577,579,"Of current sex, condom + birth ctrl/Depo"
-qnbcnone,580,582,"Of current sex, no birth ctrl"
-qniudimp,583,585,"Of current sex, used IUD/Implant"
-qnshparg,586,588,"Of current sex, used shot/patch/ring"
-qnpa0day,589,591,Active 60 min on none of past 7 days
-qnpa7day,592,594,Active 60 min on all of past 7 days
-qnfrvg,595,597,Ate 5+ fruits/vegetables/day 7 days
-qnfruit,598,600,Ate fruit/drank juice 2+ times/day
-qnveg,601,603,Ate 3+ vegetables/day 7 days
-qnfrvg2,604,606,Ate 2+fruits and 3+vegetables/day 7 days
-qnfr0,607,609,Ate fruit/drank juice 0 times/day
-qnfr1,610,612,Ate fruit/drank juice 1+ times/day
-qnfr3,613,615,Ate fruit/drank juice 3+ times/day
-qnveg0,616,618,Ate 0 vegetables/day 7 days
-qnveg1,619,621,Ate 1+ vegetables/day 7 days
-qnveg2,622,624,Ate 2+ vegetables/day 7 days
-qnsoda0,625,627,Drank soda 0 times/day past 7 days
-qnsoda2,628,630,Drank soda 2+ times/day past 7 days
-qnsoda3,631,633,Drank soda 3+ times/day past 7 days
-qnmilk0,634,636,Drank 0 glasses milk/day past 7 days
-qnmilk1,637,639,Drank 1+ glasses milk/day past 7 days
-qnmilk2,640,642,Drank 2+ glasses milk/day past 7 days
-qnnobkft,643,645,Ate breakfast on none of the past 7 days
-qndlype,646,648,Attended PE class daily
-qhallucDrug,649,649,NA
-qhivtesting,650,650,Ever tested for HIV
-qsunscreenuse,651,651,Sunscreen use outside
-qindoortanning,652,652,How many times indoor tanning
-qsleep,653,653,Hours of sleep on school night
-qmusclestrength,654,654,Strengthen muscles past 7 days
-qacademic,655,655,Describe your grades in school
-qgenderexp,656,656,How others would describe you
-qcelldriving,657,657,Did you talk on cell phone while driving
-qbullyweight,658,658,Ever been teased because of weight
-qbullygay,659,659,Ever been teased b/c labeled GLB
-qtypealcohol,660,660,What type of alcohol usually drink 30d
-qcigschool,661,661,Days use cigarettes school property 30 days
-qchewtobschool,662,662,Days use snuff school property 30 days
-qalcoholschool,663,663,How many days drink at school 30 days
-qmarijuanaschool,664,664,How many times marijuana at school 30 days
-qsynthmarijuana,665,665,Times used synthetic marijuana
-qprescription30d,666,666,Times take drug w/o prescription 30d
-qcurrentcocaine,667,667,How many times use cocaine 30 days
-qcurrentasthma,668,668,Do you still have asthma
-qtaughtsexed,669,669,Ever had sex education in school
-qtaughtstd,670,670,Ever been taught in school about STDs
-qtaughtbc,671,671,Ever been taught about BC methods in sch
-qtaughtabstinence,672,672,Ever taught about benefits of abstinence
-qdietpop,673,673,How many times diet soda past 7 days
-qcoffeetea,674,674,Times drink coffee or tea past 7 days
-qsportsdrink,675,675,How many times sports drink past 7 days
-qenergydrink,676,676,How many times energy drink past 7 days
-qsugardrink,677,677,Times sugar-sweetened beverage past 7d
-qwater,678,678,How many times plain water past 7 days
-qfastfood,679,679,Days 1+ meal/snack fast food past 7d
-qnhallucDrug,680,682,NA
-qnhivtesting,683,685,Tested for HIV
-qnsunscreenuse,686,688,Mostly or always wear sunscreen
-qnindoortanning,689,691,Used 1+ times indoor tanning
-qnsleep,692,694,Get 8+ hours sleep
-qnmusclestrength,695,697,Strengthened muscles 3+ of past 7 days
-qnacademic,698,700,Grades in school mostly As or Bs
-qngenderexp,701,703,Equally feminine and masculine
-qncelldriving,704,706,Talked on cell phone driving 1+ past 30d
-qnbullyweight,707,709,Been teased b/c of weight past 12 mos
-qnbullygay,710,712,Been teased b/c labeled GLB past 12 mos
-qntypealcohol,713,715,Liquor type alcohol drank past 30 days
-qncigschool,716,718,Used cigarettes at school 1+ 30 days
-qnchewtobschool,719,721,Used snuff/dip at school 1+ 30 days
-qnalcoholschool,722,724,Had 1+ drinks at school 1+ 30 days
-qnmarijuanaschool,725,727,Used marijuana at school 1+ times 30 day
-qnsynthmarijuana,728,730,Used synthetic marijuana 1+ times
-qnprescription30d,731,733,Prescription drug 1+ times past 30 days
-qncurrentcocaine,734,736,Used cocaine 1+ times past 30 days
-qncurrentasthma,737,739,With current asthma
-qntaughtsexed,740,742,Had sex education in school ever
-qntaughtstd,743,745,Been taught in school about STDs ever
-qntaughtbc,746,748,Been taught in school about BC methods
-qntaughtabstinence,749,751,Been taught about benefits of abstinence
-qndietpop,752,754,Drink 1+ times/day diet soda past 7d
-qncoffeetea,755,757,Drank 1+ times/day coffee/tea past 7d
-qnsportsdrink,758,760,Drank 1+ times/day sports drink past 7d
-qnenergydrink,761,763,Drank 1+ times/day energy drink past 7d
-qnsugardrink,764,766,Drank 1+times/day sugar beverage past 7d
-qnwater,767,769,Drank 4+ times/day plain water past 7d
-qnfastfood,770,772,Ate 1+ meal/snack fast food 3+ days
+string,variable,start,end,label
+sitecode 1-5,sitecode,1,5,Site code
+sitename 6-55,sitename,6,55,Site name
+sitetype 56-105,sitetype,56,105,Site type
+sitetypenum 106-113,sitetypenum,106,113,"1=District, 2=State, 3=National"
+year 114-121,year,114,121,4-digit Year of survey
+survyear 122-124,survyear,122,124,1=1991...14=2017
+weight 125-134,weight,125,134,Analysis weight
+stratum 135-142,stratum,135,142,Analysis stratum
+PSU 143-150,psu,143,150,Analysis primary sampling unit
+record 151-158,record,151,158,Record ID
+age 159-161,age,159,161,1= <=12...7=18+ years old
+sex 162-164,sex,162,164,"1=Female, 2=Male"
+grade 165-167,grade,165,167,1=9th...4=12th grade
+race4 168-170,race4,168,170,4-level race variable
+race7 171-173,race7,171,173,7-level race variable
+stheight 174-181,stheight,174,181,Height in meters
+stweight 182-189,stweight,182,189,Weight in kilograms
+bmi 190-197,bmi,190,197,Body Mass Index
+bmipct 198-205,bmipct,198,205,BMI percentile
+qnobese 206-208,qnobese,206,208,Had obesity
+qnowt 209-211,qnowt,209,211,Were overweight
+q67 212-212,q67,212,212,Sexual identity
+q66 213-213,q66,213,213,Sex of sexual contacts
+sexid 214-221,sexid,214,221,Sexual identity
+sexid2 222-229,sexid2,222,229,Collapsed sexual identity
+sexpart 230-237,sexpart,230,237,Sex of sex contact(s)
+sexpart2 238-245,sexpart2,238,245,Collapsed sex of sex contact(s)
+q8 246-246,q8,246,246,Seat belt use
+q9 247-247,q9,247,247,Riding with a drinking driver
+q10 248-248,q10,248,248,Drinking and driving
+q11 249-249,q11,249,249,Texting and driving
+q12 250-250,q12,250,250,Weapon carrying
+q13 251-251,q13,251,251,Weapon carrying at school
+q14 252-252,q14,252,252,Gun carrying past 12 mos
+q15 253-253,q15,253,253,Safety concerns at school
+q16 254-254,q16,254,254,Threatened at school
+q17 255-255,q17,255,255,Physical fighting
+q18 256-256,q18,256,256,Physical fighting at school
+q19 257-257,q19,257,257,Forced sexual intercourse
+q20 258-258,q20,258,258,Sexual violence
+q21 259-259,q21,259,259,Sexual dating violence
+q22 260-260,q22,260,260,Physical dating violence
+q23 261-261,q23,261,261,Bullying at school
+q24 262-262,q24,262,262,Electronic bullying
+q25 263-263,q25,263,263,Sad or hopeless
+q26 264-264,q26,264,264,Considered suicide
+q27 265-265,q27,265,265,Made a suicide plan
+q28 266-266,q28,266,266,Attempted suicide
+q29 267-267,q29,267,267,Injurious suicide attempt
+q30 268-268,q30,268,268,Ever cigarette use
+q31 269-269,q31,269,269,Initiation of cigarette smoking
+q32 270-270,q32,270,270,Current cigarette use
+q33 271-271,q33,271,271,Smoked >10 cigarettes
+q34 272-272,q34,272,272,Electronic vapor product use
+q35 273-273,q35,273,273,Current electronic vapor product use
+q36 274-274,q36,274,274,EVP from store
+q37 275-275,q37,275,275,Current smokeless tobacco use
+q38 276-276,q38,276,276,Current cigar use
+q39 277-277,q39,277,277,All tobacco product cessation
+q40 278-278,q40,278,278,Ever alcohol use
+q41 279-279,q41,279,279,Initiation of alcohol use
+q42 280-280,q42,280,280,Current alcohol use
+q43 281-281,q43,281,281,Source of alcohol
+q44 282-282,q44,282,282,Current binge drinking
+q45 283-283,q45,283,283,Largest number of drinks
+q46 284-284,q46,284,284,Ever marijuana use
+q47 285-285,q47,285,285,Initiation of marijuana use
+q48 286-286,q48,286,286,Current marijuana use
+q49 287-287,q49,287,287,Ever cocaine use
+q50 288-288,q50,288,288,Ever inhalant use
+q51 289-289,q51,289,289,Ever heroin use
+q52 290-290,q52,290,290,Ever methamphetamine use
+q53 291-291,q53,291,291,Ever ecstasy use
+q54 292-292,q54,292,292,Ever synthetic marijuana use
+q55 293-293,q55,293,293,Ever steroid use
+q56 294-294,q56,294,294,Ever prescription pain medicine use
+q57 295-295,q57,295,295,Illegal injected drug use
+q58 296-296,q58,296,296,Illegal drugs at school
+q59 297-297,q59,297,297,Ever sexual intercourse
+q60 298-298,q60,298,298,Sex before 13 years
+q61 299-299,q61,299,299,Multiple sex partners
+q62 300-300,q62,300,300,Current sexual activity
+q63 301-301,q63,301,301,Alcohol/drugs and sex
+q64 302-302,q64,302,302,Condom use
+q65 303-303,q65,303,303,Birth control pill use
+q68 304-304,q68,304,304,Perception of weight
+q69 305-305,q69,305,305,Weight loss
+q70 306-306,q70,306,306,Fruit juice drinking
+q71 307-307,q71,307,307,Fruit eating
+q72 308-308,q72,308,308,Green salad eating
+q73 309-309,q73,309,309,Potato eating
+q74 310-310,q74,310,310,Carrot eating
+q75 311-311,q75,311,311,Other vegetable eating
+q76 312-312,q76,312,312,No soda drinking
+q77 313-313,q77,313,313,No milk drinking
+q78 314-314,q78,314,314,Breakfast eating
+q79 315-315,q79,315,315,Physical activity >= 5 days
+q80 316-316,q80,316,316,Television watching
+q81 317-317,q81,317,317,Computer use
+q82 318-318,q82,318,318,PE attendance
+q83 319-319,q83,319,319,Sports team participation
+q84 320-320,q84,320,320,Concussion
+q85 321-321,q85,321,321,HIV testing
+q86 322-322,q86,322,322,Oral health care
+q87 323-323,q87,323,323,Asthma
+q88 324-324,q88,324,324,Sleep
+q89 325-325,q89,325,325,Grades in school
+qn8 326-328,qn8,326,328,Rarely or never wore a seat belt
+qn9 329-331,qn9,329,331,Rode with a driver who had been drinking alcohol
+qn10 332-334,qn10,332,334,Drove a car or other vehicle when they had been drinking alcohol
+qn11 335-337,qn11,335,337,Texted or e-mailed while driving a car or other vehicle
+qn12 338-340,qn12,338,340,Carried a weapon
+qn13 341-343,qn13,341,343,Carried a weapon on school property
+qn14 344-346,qn14,344,346,Carried a gun
+qn15 347-349,qn15,347,349,Did not go to school because they felt unsafe at school or on their way to or from school
+qn16 350-352,qn16,350,352,Were threatened or injured with a weapon on school property
+qn17 353-355,qn17,353,355,Were in a physical fight
+qn18 356-358,qn18,356,358,Were in a physical fight on school property
+qn19 359-361,qn19,359,361,Were ever physically forced to have sexual intercourse
+qn20 362-364,qn20,362,364,Experienced sexual violence
+qn21 365-367,qn21,365,367,Experienced sexual dating violence
+qn22 368-370,qn22,368,370,Experienced physical dating violence
+qn23 371-373,qn23,371,373,Were bullied on school property
+qn24 374-376,qn24,374,376,Were electronically bullied
+qn25 377-379,qn25,377,379,Felt sad or hopeless
+qn26 380-382,qn26,380,382,Seriously considered attempting suicide
+qn27 383-385,qn27,383,385,Made a plan about how they would attempt suicide
+qn28 386-388,qn28,386,388,Attempted suicide
+qn29 389-391,qn29,389,391,"Had a suicide attempt that resulted in an injury, poisoning, or overdose that had to be treated by a doctor or nurse"
+qn30 392-394,qn30,392,394,Ever tried cigarette smoking
+qn31 395-397,qn31,395,397,First tried cigarette smoking before age 13 years
+qn32 398-400,qn32,398,400,Currently smoked cigarettes
+qn33 401-403,qn33,401,403,Smoked more than 10 cigarettes per day
+qn34 404-406,qn34,404,406,Ever used an electronic vapor product
+qn35 407-409,qn35,407,409,Currently used an electronic vapor product
+qn36 410-412,qn36,410,412,Usually got their own electronic vapor products by buying them in a store
+qn37 413-415,qn37,413,415,Currently used smokeless tobacco
+qn38 416-418,qn38,416,418,Currently smoked cigars
+qn39 419-421,qn39,419,421,Tried to quit using all tobacco products
+qn40 422-424,qn40,422,424,Ever drank alcohol
+qn41 425-427,qn41,425,427,Had their first drink of alcohol before age 13 years
+qn42 428-430,qn42,428,430,Currently drank alcohol
+qn43 431-433,qn43,431,433,Usually got the alcohol they drank by someone giving it to them
+qn44 434-436,qn44,434,436,Currently were binge drinking
+qn45 437-439,qn45,437,439,Reported that the largest number of drinks they had in a row was 10 or more
+qn46 440-442,qn46,440,442,Ever used marijuana
+qn47 443-445,qn47,443,445,Tried marijuana for the first time before age 13 years
+qn48 446-448,qn48,446,448,Currently used marijuana
+qn49 449-451,qn49,449,451,Ever used cocaine
+qn50 452-454,qn50,452,454,Ever used inhalants
+qn51 455-457,qn51,455,457,Ever used heroin
+qn52 458-460,qn52,458,460,Ever used methamphetamines
+qn53 461-463,qn53,461,463,Ever used ecstasy
+qn54 464-466,qn54,464,466,Ever used synthetic marijuana
+qn55 467-469,qn55,467,469,Ever took steroids without a doctor's prescription
+qn56 470-472,qn56,470,472,Ever took prescription pain medicine without a doctor's prescription or differently than how a doctor told them to use it
+qn57 473-475,qn57,473,475,Ever injected any illegal drug
+qn58 476-478,qn58,476,478,"Were offered, sold, or given an illegal drug on school property"
+qn59 479-481,qn59,479,481,Ever had sexual intercourse
+qn60 482-484,qn60,482,484,Had sexual intercourse for the first time before age 13 years
+qn61 485-487,qn61,485,487,Had sexual intercourse with four or more persons during their life
+qn62 488-490,qn62,488,490,Were currently sexually active
+qn63 491-493,qn63,491,493,Drank alcohol or used drugs before last sexual intercourse
+qn64 494-496,qn64,494,496,Used a condom during last sexual intercourse
+qn65 497-499,qn65,497,499,Used birth control pills before last sexual intercourse
+qn68 500-502,qn68,500,502,Described themselves as slightly or very overweight
+qn69 503-505,qn69,503,505,Were trying to lose weight
+qn70 506-508,qn70,506,508,Did not drink fruit juice
+qn71 509-511,qn71,509,511,Did not eat fruit
+qn72 512-514,qn72,512,514,Did not eat green salad
+qn73 515-517,qn73,515,517,Did not eat potatoes
+qn74 518-520,qn74,518,520,Did not eat carrots
+qn75 521-523,qn75,521,523,Did not eat other vegetables
+qn76 524-526,qn76,524,526,"Did not drink a can, bottle, or glass of soda or pop"
+qn77 527-529,qn77,527,529,Did not drink milk
+qn78 530-532,qn78,530,532,Did not eat breakfast
+qn79 533-535,qn79,533,535,Were physically active at least 60 minutes per day on 5 or more days
+qn80 536-538,qn80,536,538,Watched television 3 or more hours per day
+qn81 539-541,qn81,539,541,Played video or computer games or used a computer 3 or more hours per day
+qn82 542-544,qn82,542,544,Attended physical education (PE) classes on 1 or more days
+qn83 545-547,qn83,545,547,Played on at least one sports team
+qn84 548-550,qn84,548,550,Had a concussion from playing a sport or being physically active
+qn85 551-553,qn85,551,553,Were ever tested for human immunodeficiency virus (HIV)
+qn86 554-556,qn86,554,556,Saw a dentist
+qn87 557-559,qn87,557,559,Had ever been told by a doctor or nurse that they had asthma
+qn88 560-562,qn88,560,562,Got 8 or more hours of sleep
+qn89 563-565,qn89,563,565,Described their grades in school as mostly A's or B's
+qnfrcig 566-568,qnfrcig,566,568,Currently smoked cigarettes frequently
+qndaycig 569-571,qndaycig,569,571,Currently smoked cigarettes daily
+qnfrevp 572-574,qnfrevp,572,574,Currently used an electronic vapor product frequently
+qndayevp 575-577,qndayevp,575,577,Currently used an elecctronic vapor product daily
+qnfrskl 578-580,qnfrskl,578,580,Currently used smokeless tobacco frequently
+qndayskl 581-583,qndayskl,581,583,Currently used smokeless tobacco daily
+qnfrcgr 584-586,qnfrcgr,584,586,Currently smoked cigars frequently
+qndaycgr 587-589,qndaycgr,587,589,Currently smoked cigars daily
+qntb2 590-592,qntb2,590,592,Currently smoked cigarettes or cigars
+qntb3 593-595,qntb3,593,595,Currently smoked cigarettes or cigars or used smokeless tobacco
+qntb4 596-598,qntb4,596,598,Currently smoked cigarettes or cigars or used smokeless tobacco or electronic vapor products
+qniudimp 599-601,qniudimp,599,601,"Used an IUD (e.g., Mirena or ParaGard) or implant (e.g., Implanon or Nexplanon) before last sexual intercourse"
+qnshparg 602-604,qnshparg,602,604,"Used a shot (e.g., Depo-Provera), patch (e.g., OrthoEvra), or birth control ring (e.g., NuvaRing) before last sexual intercourse"
+qnothhpl 605-607,qnothhpl,605,607,"Used birth control pills; an IUD (such as Mirena or ParaGard) or implant (such as Implanon or Nexplanon); or a shot (such as Depo-Provera), patch (such as OrthoEvra), or birth control ring (such as NuvaRing) before last sexual intercourse"
+qndualbc 608-610,qndualbc,608,610,"Used both condom during last sexual intercourse and birth control pills; IUD (e.g., Mirena/ParaGard)/implant (e.g., Implanon/Nexplanon); or shot (e.g., Depo-Provera)/patch (e.g., OrthoEvra)/birth control ring (e.g., NuvaRing) before last sexual intercourse"
+qnbcnone 611-613,qnbcnone,611,613,Did not use any method to prevent pregnancy during last sexual intercourse
+qnfr0 614-616,qnfr0,614,616,Did not eat fruit or drink 100% fruit juices
+qnfr1 617-619,qnfr1,617,619,Ate fruit or drank 100% fruit juices one or more times per day
+qnfr2 620-622,qnfr2,620,622,Ate fruit or drank 100% fruit juices two or more times per day
+qnfr3 623-625,qnfr3,623,625,Ate fruit or drank 100% fruit juices three or more times per day
+qnveg0 626-628,qnveg0,626,628,Did not eat vegetables
+qnveg1 629-631,qnveg1,629,631,Ate vegetables one or more times per day
+qnveg2 632-634,qnveg2,632,634,Ate vegetables two or more times per day
+qnveg3 635-637,qnveg3,635,637,Ate vegetables three or more times per day
+qnsoda1 638-640,qnsoda1,638,640,"Drank a can, bottle, or glass of soda or pop one or more times per day"
+qnsoda2 641-643,qnsoda2,641,643,"Drank a can, bottle, or glass of soda or pop two or more times per day"
+qnsoda3 644-646,qnsoda3,644,646,"Drank a can, bottle, or glass of soda or pop three or more times per day"
+qnmilk1 647-649,qnmilk1,647,649,Drank one or more glasses per day of milk
+qnmilk2 650-652,qnmilk2,650,652,Drank two or more glasses per day of milk
+qnmilk3 653-655,qnmilk3,653,655,Drank three or more glasses per day of milk
+qnbk7day 656-658,qnbk7day,656,658,Ate breakfast on all 7 days
+qnpa0day 659-661,qnpa0day,659,661,Did not participate in at least 60 minutes of physical activity on at least 1 day
+qnpa7day 662-664,qnpa7day,662,664,Were physically active at least 60 minutes per day on all 7 days
+qndlype 665-667,qndlype,665,667,Attended physical education (PE) classes on all 5 days
+qnnodnt 668-670,qnnodnt,668,670,Never saw a dentist
+qbikehelmet 671-671,qbikehelmet,671,671,Bicycle helmet use
+qdrivemarijuana 672-672,qdrivemarijuana,672,672,Drive when using marijuana
+qcelldriving 673-673,qcelldriving,673,673,Did you talk on cell phone while driving
+qpropertydamage 674-674,qpropertydamage,674,674,Property stolen at school >= 1 time
+qbullyweight 675-675,qbullyweight,675,675,Ever been teased because of weight
+qbullygender 676-676,qbullygender,676,676,Victim of gender teasing
+qbullygay 677-677,qbullygay,677,677,Ever been teased b/c labeled GLB
+qchokeself 678-678,qchokeself,678,678,Ever been choked/choked self on purpose
+qcigschool 679-679,qcigschool,679,679,Days use cigarettes school property 30 days
+qchewtobschool 680-680,qchewtobschool,680,680,Days use snuff school property 30 days
+qalcoholschool 681-681,qalcoholschool,681,681,How many days drink @ school 30 days
+qtypealcohol 682-682,qtypealcohol,682,682,What type of alcohol usually drink 30d
+qhowmarijuana 683-683,qhowmarijuana,683,683,Usual use of marijuana
+qmarijuanaschool 684-684,qmarijuanaschool,684,684,How many times marijuana @ school 30 days
+qcurrentcocaine 685-685,qcurrentcocaine,685,685,How many times use cocaine 30 days
+qcurrentheroin 686-686,qcurrentheroin,686,686,Current heroin use
+qcurrentmeth 687-687,qcurrentmeth,687,687,Current meth use
+qhallucdrug 688-688,qhallucdrug,688,688,Ever used LSD
+qprescription30d 689-689,qprescription30d,689,689,Times take drug w/o prescription 30d
+qgenderexp 690-690,qgenderexp,690,690,How others would describe you
+qtaughtHIV 691-691,qtaughthiv,691,691,Ever taught about AIDS/HIV at school
+qtaughtsexed 692-692,qtaughtsexed,692,692,Ever had sex education in school
+qtaughtstd 693-693,qtaughtstd,693,693,Ever been taught in school about STDs
+qtaughtcondom 694-694,qtaughtcondom,694,694,Ever been taught in school about how to use condom
+qtaughtbc 695-695,qtaughtbc,695,695,Ever been taught about BC methods in sch
+qdietpop 696-696,qdietpop,696,696,How many times diet soda past 7 days
+qcoffeetea 697-697,qcoffeetea,697,697,Times drink coffee or tea past 7 days
+qsportsdrink 698-698,qsportsdrink,698,698,Sports drinks
+qenergydrink 699-699,qenergydrink,699,699,How many times energy drink past 7 days
+qsugardrink 700-700,qsugardrink,700,700,Times sugar-sweetened beverage past 7d
+qwater 701-701,qwater,701,701,Plain water
+qfastfood 702-702,qfastfood,702,702,Days 1+ meal/snack fast food past 7d
+qfoodallergy 703-703,qfoodallergy,703,703,Food allergies
+qwenthungry 704-704,qwenthungry,704,704,How often went hungry
+qmusclestrength 705-705,qmusclestrength,705,705,Muscle strengthening
+qsunscreenuse 706-706,qsunscreenuse,706,706,Sunscreen use outside
+qindoortanning 707-707,qindoortanning,707,707,Indoor tanning
+qsunburn 708-708,qsunburn,708,708,Sunburn
+qconcentrating 709-709,qconcentrating,709,709,Difficulty concentrating
+qcurrentasthma 710-710,qcurrentasthma,710,710,Do you still have asthma
+qwheresleep 711-711,qwheresleep,711,711,Homelessness
+qspeakenglish 712-712,qspeakenglish,712,712,How well speak English
+qtransgender 713-713,qtransgender,713,713,Transgender
+qnbikehelmet 714-716,qnbikehelmet,714,716,Rarely or never wore a bicycle helmet
+qndrivemarijuana 717-719,qndrivemarijuana,717,719,Drove a car or other vehicle when they had been using marijuana
+qncelldriving 720-722,qncelldriving,720,722,Talked on cell phone driving 1+ past 30d
+qnpropertydamage 723-725,qnpropertydamage,723,725,Reported that their property had been stolen or deliberately damaged on school property one or more times
+qnbullyweight 726-728,qnbullyweight,726,728,Been teased b/c of weight past 12 mos
+qnbullygender 729-731,qnbullygender,729,731,Been teased because of gender
+qnbullygay 732-734,qnbullygay,732,734,Been teased b/c labeled GLB past 12 mos
+qnchokeself 735-737,qnchokeself,735,737,Choked yourself on purpose
+qncigschool 738-740,qncigschool,738,740,Used cigarettes at school 1+ 30 days
+qnchewtobschool 741-743,qnchewtobschool,741,743,Used snuff/dip at school 1+ 30 days
+qnalcoholschool 744-746,qnalcoholschool,744,746,Had 1+ drinks at school 1+ 30 days
+qntypealcohol 747-749,qntypealcohol,747,749,Liquor type alcohol drank past 30 days
+qnhowmarijuana 750-752,qnhowmarijuana,750,752,"Usually used marijuana by smoking it in a joint, bong, pipe, or blunt"
+qnmarijuanaschool 753-755,qnmarijuanaschool,753,755,Used marijuana @ school 1+ times 30 day
+qncurrentcocaine 756-758,qncurrentcocaine,756,758,Used cocaine 1+ times past 30 days
+qncurrentheroin 759-761,qncurrentheroin,759,761,Used heroin 1+ times past 30 days
+qncurrentmeth 762-764,qncurrentmeth,762,764,Used meth 1+ times past 30 days
+qnhallucdrug 765-767,qnhallucdrug,765,767,Used LSD 1+ times
+qnprescription30d 768-770,qnprescription30d,768,770,Prescription drug 1+ times past 30 days
+qngenderexp 771-773,qngenderexp,771,773,Equally feminine and masculine
+qntaughtHIV 774-776,qntaughthiv,774,776,Been taught about HIV in school
+qntaughtsexed 777-779,qntaughtsexed,777,779,Had sex education in school ever
+qntaughtstd 780-782,qntaughtstd,780,782,Been taught in school about STDs ever
+qntaughtcondom 783-785,qntaughtcondom,783,785,Been taught how to use a condom in sch
+qntaughtbc 786-788,qntaughtbc,786,788,Been taught in school about BC methods
+qndietpop 789-791,qndietpop,789,791,Drink 1+ times/day diet soda past 7d
+qncoffeetea 792-794,qncoffeetea,792,794,Drank 1+ times/day coffee/tea past 7d
+qnsportsdrink 795-797,qnsportsdrink,795,797,"Did not drink a can, bottle, or glass of a sports drink"
+qnspdrk1 798-800,qnspdrk1,798,800,"Drank a can, bottle, or glass of a sports drink one or more times per day"
+qnspdrk2 801-803,qnspdrk2,801,803,"Drank a can, bottle, or glass of a sports drink two or more times per day"
+qnspdrk3 804-806,qnspdrk3,804,806,"Drank a can, bottle, or glass of a sports drink three or more times per day"
+qnenergydrink 807-809,qnenergydrink,807,809,Drank 1+ times/day energy drink past 7d
+qnsugardrink 810-812,qnsugardrink,810,812,Drank 1+times/day sugar beverage past 7d
+qnwater 813-815,qnwater,813,815,Did not drink a bottle or glass of plain water
+qnwater1 816-818,qnwater1,816,818,Drank one or more glasses per day of water
+qnwater2 819-821,qnwater2,819,821,Drank two or more glasses per day of water
+qnwater3 822-824,qnwater3,822,824,Drank three or more glasses per day of water
+qnfastfood 825-827,qnfastfood,825,827,Ate 1+ meal/snack fast food 3+ days
+qnfoodallergy 828-830,qnfoodallergy,828,830,Have to avoid some foods because eating the food could cause an allergic reaction
+qnwenthungry 831-833,qnwenthungry,831,833,Mostly/Always went hungry past 30 days
+qnmusclestrength 834-836,qnmusclestrength,834,836,Strengthened muscles 3+ of past 7 days
+qnsunscreenuse 837-839,qnsunscreenuse,837,839,Mostly or always wear sunscreen
+qnindoortanning 840-842,qnindoortanning,840,842,Used 1+ times indoor tanning
+qnsunburn 843-845,qnsunburn,843,845,Had a sunburn
+qnconcentrating 846-848,qnconcentrating,846,848,"Have serious difficulty concentrating, remembering, or making decisions"
+qncurrentasthma 849-851,qncurrentasthma,849,851,With current asthma
+qnwheresleep 852-854,qnwheresleep,852,854,"Usually slept in the home of a friend, family member, or other person because they had to leave their home or their parent or guardian cannot afford housing"
+qnspeakenglish 855-857,qnspeakenglish,855,857,Speak English well or very well
+qntransgender 858-860,qntransgender,858,860,Are transgender.
